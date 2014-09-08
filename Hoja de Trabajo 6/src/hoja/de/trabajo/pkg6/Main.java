@@ -1,30 +1,15 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-package hoja.de.trabajo.pkg6;
-
-import java.util.Scanner;
-import java.util.Set;
-
-/**
- *
- * @author Erick
- */
+//Clase:Main.java
+//clase main para la HDT6, llama a la clase conjunto
+//Hecho por:            Kimberly Guzmán           Carnet: 13642 
+//			Erick Saucedo             Carnet: 13167
+//			
+//Fecha: 07/09/2014
+//***************************************************************
 public class Main {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
-        Set ListaDesarrolladores;
-        Scanner in = new Scanner(System.in);
-        int opcion=0;
-        
-         
-        
-        
-                
+        Conjunto con = new Conjunto(); //Inicia los conjuntos
+        con.ingresarP(); //permite el ingreso de las personas
+        con.Resultados(); //imprime los resutlados
     }
 }

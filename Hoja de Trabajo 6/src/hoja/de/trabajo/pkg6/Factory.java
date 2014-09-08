@@ -1,29 +1,22 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-package hoja.de.trabajo.pkg6;
+//Clase:Factory.java
+//Clase factory que permite escoger entre las diferentes implementaciones
+//Hecho por:            Kimberly Guzmán           Carnet: 13642 
+//			Erick Saucedo             Carnet: 13167
+//			
+//Fecha: 07/09/2014
+//***************************************************************
+import java.util.*;
 
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.Set;
-import java.util.TreeSet;
-
-/**
- *
- * @author Erick
- */
-public class Factory {
-   public Set getFactory(int entry) {
-        switch(entry){
-            case 1:
-                return new HashSet ();
-            case 2:
-                return new TreeSet();
-            case 3:
-                return new LinkedHashSet();
+public class Factory<E>{
+    public Set<E> getSet(int implementado){
+        if(implementado==1){
+            return new HashSet<E>(); //regresa HashSet
+        }else if(implementado==2){
+            return new TreeSet<E>(); //regresa TreeSet
+        }else if(implementado==3){
+            return new LinkedHashSet<E>(); //regresa LinkedHashSet
+        }else{
+            return null;
         }
-        return null; 
-   }
-    
+    }
 }
