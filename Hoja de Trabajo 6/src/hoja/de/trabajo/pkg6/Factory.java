@@ -16,6 +16,7 @@ public class Factory<E>{
         }else if(implementado==3){
             return new LinkedHashSet<E>(); //regresa LinkedHashSet
         }else{
+            
             return null;
         }
     }

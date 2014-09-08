@@ -11,5 +11,6 @@ public class Main {
         Conjunto con = new Conjunto(); //Inicia los conjuntos
         con.ingresarP(); //permite el ingreso de las personas
         con.Resultados(); //imprime los resutlados
+        
     }
 }

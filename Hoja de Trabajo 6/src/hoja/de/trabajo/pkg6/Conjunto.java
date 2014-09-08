@@ -29,6 +29,7 @@ public class Conjunto {
     private Set<String> res5 = null;
     private Set<String> res6 = null;
         
+    
     public Conjunto(){ //inicializacion
         //MENU
         do{
